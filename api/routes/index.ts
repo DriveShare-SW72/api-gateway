@@ -6,7 +6,7 @@ import localsRoute from './locals.route'
 
 export default function routerApi(app: Express) {
   const router = express.Router()
-  app.use('/api/v1', router)
+  app.use('/api/vs1', router)
   router.use('/users', usersRoute)
   router.use('/offers', offersRoute)
   router.use('/locals', localsRoute)
