@@ -1,9 +1,9 @@
 import express from 'express'
 
-const router = express.Router()
+const localService = express.Router()
 
-router.get('/', (_req, res) => {
+localService.get('/', (_req, res) => {
   res.json({ message: 'Welcome to the Local services' })
 })
 
-export default router
+export default localService
