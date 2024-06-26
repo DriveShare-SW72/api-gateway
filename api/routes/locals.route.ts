@@ -3,11 +3,11 @@ import httpProxy from 'http-proxy'
 
 // Configurar los servidores de destino
 const servers = {
-  '/geocoordinates': 'https://backend-localservice.onrender.com/api/v1',
-  '/parkings': 'https://backend-localservice.onrender.com/api/v1',
-  '/locations': 'https://backend-localservice.onrender.com/api/v1',
-  '/schedules': 'https://backend-localservice.onrender.com/api/v1',
-  '/driveshare': 'https://driveshare-backend-7imt.onrender.com/api/v1',
+  '/geocoordinates': 'http://3.14.129.158:8001/api/v1',
+  '/parkings': 'http://3.14.129.158:8001/api/v1',
+  '/locations': 'http://3.14.129.158:8001/api/v1',
+  '/schedules': 'http://3.14.129.158:8001/api/v1',
+  '/driveshare': 'http://3.14.129.158:8001/api/v1',
   // Agrega más rutas y servidores según tus necesidades
 }
 

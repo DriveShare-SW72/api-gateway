@@ -3,6 +3,7 @@ import type { Express } from 'express'
 import usersRoute from './users.route'
 import offersRoute from './offers.route'
 import localsRoute from './locals.route'
+import reservationsRoute from './reservations'
 
 export default function routerApi(app: Express) {
   const router = express.Router()
@@ -10,4 +11,5 @@ export default function routerApi(app: Express) {
   router.use('/users', usersRoute)
   router.use('/offers', offersRoute)
   router.use('/locals', localsRoute)
+  router.use('/reservations', reservationsRoute)
 }
