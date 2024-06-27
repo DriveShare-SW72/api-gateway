@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsnd api/index.ts",
-    "build": "rimraf ./dist && tsc",
+    "build": "rimraf ./dist && tsc && cp .env dist/.env",
     "start": "node dist/index.js"
   },
   "keywords": [],
@@ -15,7 +15,11 @@
   "dependencies": {
     "@types/axios": "^0.14.0",
     "axios": "^1.7.2",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "csrf": "^3.1.0",
+    "csurf": "^1.11.0",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "http-proxy": "^1.18.1",
     "http-proxy-middleware": "^3.0.0",
